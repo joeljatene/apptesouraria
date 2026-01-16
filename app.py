@@ -427,5 +427,3 @@ elif menu == "Configurações":
     with t2: editor_com_salvamento('config_categorias_receita', 'cfg_rec')
     with t3: editor_com_salvamento('config_categorias_despesa', 'cfg_desp')
     with t4: editor_com_salvamento('config_centros_custo', 'cfg_cc')
-
-```
