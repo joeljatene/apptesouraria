@@ -1,16 +1,3 @@
-Você tem total razão. O componente de tabela do Streamlit (`data_editor`) faz muita coisa "automática" (como o Excel), mas para um sistema de gestão, é muito mais seguro e intuitivo ter um botão explícito de **"💾 Salvar Alterações"** para confirmar o que você fez, e instruções claras sobre como excluir.
-
-Fiz a **Versão 4.0**. As principais mudanças foram nos menus de **Sócios** e **Configurações**:
-
-1. **Botão Salvar:** Agora, quando você edita, adiciona ou exclui alguém na tabela, aparece um botão verde "Salvar Alterações". Os dados só mudam de verdade quando você clica nele.
-2. **Instruções na Tela:** Coloquei um aviso explicando como excluir linhas (selecionar e apertar delete) e adicionar (clicar na última linha).
-3. **Botão Descartar:** Se fez besteira, pode clicar em "Descartar" para voltar como estava antes.
-
-Aqui está o código completo atualizado:
-
-### Arquivo `app.py` (Versão 4.0 - Com Controle de Edição)
-
-```python
 import streamlit as st
 import pandas as pd
 from datetime import date, datetime
